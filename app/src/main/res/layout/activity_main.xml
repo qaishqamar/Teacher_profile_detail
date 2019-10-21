@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:id="@+id/locality">
+
+
+    <ImageView
+            android:layout_width="168dp"
+            android:layout_height="150dp"
+            android:background="@drawable/qamar_pic"
+            android:id="@+id/imageview_id" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="Qaish Qamar"
+            android:layout_width="243dp"
+            android:layout_height="34dp"
+            android:id="@+id/name_id"
+            android:textSize="25sp"
+            android:fontFamily="@font/aclonica" android:paddingLeft="5dp" android:textColor="#914949"
+            tools:ignore="MissingConstraints" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageview_id"
+            app:layout_constraintEnd_toEndOf="@+id/imageview_id"
+            app:layout_constraintStart_toStartOf="@+id/imageview_id" app:layout_constraintHorizontal_bias="1.0"/>
+    <TextView
+            android:layout_width="80dp"
+            android:layout_height="15dp"
+            android:id="@+id/house_no_id" android:inputType="textShortMessage"
+            app:layout_constraintEnd_toEndOf="@+id/name_id"
+            android:text="house no 23" app:layout_constraintStart_toStartOf="@id/name_id"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/name_id" android:textSize="12sp" android:paddingLeft="8dp"/>
+    <TextView
+            android:text="Chira Mohalla"
+            android:layout_width="97dp"
+            android:layout_height="15dp"
+            android:id="@+id/street_id" app:layout_constraintEnd_toEndOf="@+id/name_id"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toEndOf="@+id/house_no_id"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.032" android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/name_id" android:textSize="12sp"/>
+    <TextView
+            android:text="Baragain Ranchi"
+            android:layout_width="119dp"
+            android:layout_height="15dp"
+            android:id="@+id/locality_id" app:layout_constraintStart_toStartOf="@+id/house_no_id"
+            app:layout_constraintEnd_toEndOf="@+id/house_no_id" tools:ignore="MissingConstraints"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/house_no_id" android:textSize="12sp" android:paddingLeft="8dp"/>
+    <TextView
+            android:text="pin code 834009"
+            android:layout_width="112dp"
+            android:layout_height="15dp"
+            android:id="@+id/pincode"
+            app:layout_constraintStart_toStartOf="@+id/locality_id"
+            app:layout_constraintTop_toBottomOf="@+id/locality_id"
+            app:layout_constraintEnd_toEndOf="@+id/locality_id" app:layout_constraintHorizontal_bias="0.0"
+            android:textSize="12sp" android:layout_marginTop="5dp" android:paddingLeft="8dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="287dp"
+            android:layout_height="21dp"
+            android:id="@+id/qualification_layout_id"
+            app:layout_constraintTop_toBottomOf="@+id/pincode"
+            app:layout_constraintStart_toStartOf="@+id/pincode" app:layout_constraintEnd_toEndOf="@+id/pincode"
+            android:layout_marginTop="12dp" app:layout_constraintHorizontal_bias="0.0">
+
+        <TextView
+                android:text="QUALIFICATION"
+                android:layout_width="123dp"
+                android:layout_height="match_parent"
+                android:id="@+id/qualification_id"
+                app:layout_constraintTop_toTopOf="@+id/qualification_layout_id"
+                app:layout_constraintStart_toStartOf="@+id/qualification_layout_id"
+                android:layout_marginStart="8dp"/>
+        <TextView
+                android:text="BCA 2ND YEAR"
+                android:layout_width="133dp"
+                android:layout_height="match_parent" android:id="@+id/qualifiction_2_id" android:layout_weight="1"
+                tools:layout_editor_absoluteY="291dp"
+                app:layout_constraintEnd_toEndOf="@+id/qualification_layout_id" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toEndOf="@+id/qualification_id"
+                android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="1.0"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="289dp"
+            android:layout_height="20dp"
+            android:id="@+id/experience_layout_id" app:layout_constraintEnd_toEndOf="@+id/qualification_layout_id"
+            app:layout_constraintStart_toStartOf="@+id/qualification_layout_id" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/qualification_layout_id">
+        <TextView
+                android:text="Experience"
+                android:layout_width="36dp"
+                android:layout_height="match_parent" android:id="@+id/experience_id" android:layout_weight="1"
+                android:layout_marginLeft="8dp"/>
+        <TextView
+                android:text="2 Years"
+                android:layout_width="61dp"
+                android:layout_height="match_parent" android:id="@+id/experience2_id" android:layout_weight="1"
+                android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="289dp"
+            android:layout_height="20dp"
+            android:id="@+id/home_layout_id"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/experience_layout_id"
+            app:layout_constraintEnd_toEndOf="@+id/experience_layout_id" app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/experience_layout_id">
+        <TextView
+                android:text="Home Tutor fee"
+                android:layout_width="33dp"
+                android:layout_height="match_parent" android:id="@+id/home_tutor_price" android:layout_weight="1"
+                android:layout_marginLeft="10dp"/>
+        <TextView
+                android:text="1500/month"
+                android:layout_width="60dp"
+                android:layout_height="match_parent" android:id="@+id/fee_price_id" android:layout_weight="1"
+                android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="289dp"
+            android:layout_height="20dp"
+            android:id="@+id/class_layout_id"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/home_layout_id"
+            app:layout_constraintStart_toStartOf="@+id/home_layout_id" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="1.0" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/home_layout_id">
+        <TextView
+                android:layout_width="125dp"
+                android:layout_height="20dp"
+                android:id="@+id/class_fee_id"
+                android:text="class tutor fee" android:layout_marginLeft="8dp"/>
+        <TextView android:layout_width="143dp"
+                  android:layout_height="20dp"
+                  android:id="@+id/class_tutor_fee_id"
+                  android:text="500/month"
+                  android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="289dp"
+                  android:layout_height="20dp"
+                  android:id="@+id/tutor_type_layout_id"
+                  android:orientation="horizontal"
+                  app:layout_constraintEnd_toEndOf="@+id/class_layout_id"
+                  app:layout_constraintStart_toStartOf="@+id/class_layout_id"
+                  app:layout_constraintHorizontal_bias="1.0" android:layout_marginTop="8dp"
+                  app:layout_constraintTop_toBottomOf="@+id/class_layout_id">
+        <TextView android:layout_width="125dp"
+                  android:layout_height="20dp"
+                  android:text="Tutor type"
+                  android:layout_marginLeft="8dp"/>
+        <TextView
+                android:layout_width="131dp"
+                android:layout_height="20dp"
+                android:text="Highschool Tutor"
+                android:id="@+id/tutor_type_id"
+                android:layout_marginLeft="8dp"/>
+
+
+    </LinearLayout>
+    <TextView android:layout_width="289dp"
+              android:layout_height="40dp"
+              android:id="@+id/discription_id"
+              android:text=".fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffssssssssssssssssss"
+              app:layout_constraintEnd_toEndOf="@+id/subject_layout"
+              app:layout_constraintStart_toStartOf="@+id/subject_layout" android:layout_marginStart="8dp"
+              android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/subject_layout"
+              android:paddingLeft="5dp"/>
+    <LinearLayout
+            android:layout_width="289dp"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/subject_layout"
+            app:layout_constraintStart_toStartOf="@+id/tutor_type_layout_id"
+            app:layout_constraintEnd_toEndOf="@+id/tutor_type_layout_id" app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/tutor_type_layout_id">
+        <TextView android:layout_width="125dp"
+                  android:layout_height="match_parent"
+                  android:text="Specialize Subject"
+                  android:layout_marginLeft="8dp"/>
+        <TextView android:layout_width="131dp"
+                  android:layout_height="20dp"
+                  android:text="Computor Science"
+                  android:id="@+id/subject_id"
+                  android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+    <Button
+            android:layout_width="349dp"
+            android:layout_height="63dp"
+            android:id="@+id/call_id" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/discription_id"
+            app:layout_constraintEnd_toEndOf="@+id/discription_id"
+            app:layout_constraintStart_toStartOf="@+id/discription_id" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.147"
+            android:src="@drawable/ic_call"
+            android:background="@drawable/edit_round_corner" android:foreground="@drawable/ic_call"/>
+</android.support.constraint.ConstraintLayout>
