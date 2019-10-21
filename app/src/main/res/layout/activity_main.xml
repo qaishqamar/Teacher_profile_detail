@@ -69,7 +69,7 @@
             android:layout_marginTop="12dp" app:layout_constraintHorizontal_bias="0.0">
 
         <TextView
-                android:text="QUALIFICATION"
+                android:text="Qualification"
                 android:layout_width="123dp"
                 android:layout_height="match_parent"
                 android:id="@+id/qualification_id"
